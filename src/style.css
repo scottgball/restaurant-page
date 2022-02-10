@@ -1,0 +1,118 @@
+
+@font-face {
+  font-family: 'rust';
+  src: url('./introheadr-base-webfont.woff2') format('woff2'),
+    url('./introheadr-base-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'norWester';
+  src: url('./norwester-webfont.woff2') format('woff2'),
+    url('./norwester-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'chunkFive';
+  src: url('./chunk_five_print-webfont.woff2') format('woff2'),
+    url('./chunk_five_print-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'chunkFiveRegular';
+  src: url('./chunkfive-regular-webfont.woff2') format('woff2'),
+    url('./chunkfive-regular-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+:root {
+  --sharedBgColor: rgb(238, 214, 175);
+  --sharedFontColor: rgb(37, 37, 37);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 181, 90);
+}
+
+button {
+  background-color: var(--sharedBgColor);
+  border: none;
+  padding: 5px;
+  margin: 0px 5px;
+  color: var(--sharedFontColor);
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+button:hover {
+  background-color: rgb(189, 169, 137);
+}
+
+#navText {
+  font-size: 24px;
+  font-weight: 900;
+  padding: 0px;
+  margin: 10px 0px;
+}
+
+body {
+  background-color: bisque;
+}
+
+.pageHeader {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'chunkFiveRegular';
+  color: var(--sharedFontColor)
+}
+
+.subHeader {
+  text-align: center;
+  font-size: 32px;
+  font-family: 'chunkFiveRegular';
+}
+
+.itemHeader {
+  font-weight: 900;
+  font-size: 28px;
+  color: red;
+  text-align: center;
+  font-family: 'norWester';
+}
+
+.image {
+  display: block;
+  margin: 40px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.mainText {
+  background-color: var(--sharedBgColor);
+  color: var(--sharedFontColor);
+  font-size: 24px;
+  font-family: 'rust';
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+  margin: 20px auto;
+  border-radius: 5px;
+}
